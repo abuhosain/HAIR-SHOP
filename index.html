@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width= , initial-scale=1.0">
+    <meta name="viewport" content="width= , initial-scale= 1">
     <title>Hair-shop</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -35,6 +35,27 @@
     <div id="menuBtn">
         <img src="images/menu.png" alt="" id="menu">
     </div>
-    
+    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sidNave = document.getElementById("sidNave")
+        var menu = document.getElementById("menu")
+
+        sidNave.style.right = "-250px"
+
+        menuBtn.onclick = function(){
+            if(sidNave.style.right == "-250px"){
+                sidNave.style.right = "0px";
+                menu.src = "images/close.png"
+
+            } else{
+                sidNave.style.right = "-250px";
+                menu.src = "images/menu.png"
+
+            }
+        }
+
+
+
+    </script>
 </body>
 </html>
